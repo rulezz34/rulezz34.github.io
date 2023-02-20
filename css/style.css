@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #d7b520;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* KONTÉNER -------------------------- */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #ddd;
+  background: #fff;
+}
+
+/* FEJLÉC ---------------------------- */
+
+#header-img {
+  display: block;
+  width: 96%;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+#header-img,
+aside,
+section {
+  border: 2px solid rgb(203, 211, 238);
+}
+
+/* OLDALSÁV -------------------------- */
+
+aside {
+  width: 30%;
+  height: 2040px;
+  float: left;
+  margin: 35px;
+  background: rgb(82, 148, 207);
+  border-radius: 10px;
+}
+
+/* NAVIGÁCIÓ */
+
+nav {
+  width: 100%;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+li {
+  list-style-type: none;
+  text-align: center;
+  border-radius: 10px;
+}
+
+li a {
+  font-size: 24px;
+  display: block;
+  text-decoration: none;
+  padding: 10px 30px;
+  color: black;
+}
+
+li:hover {
+  background-color: rgb(93, 92, 92);
+}
+
+/* ŰRLAP */
+
+form {
+  color: rgb(23, 23, 23);
+  margin: 35px;
+}
+
+input,
+label,
+select {
+  display: block;
+}
+
+input,
+select {
+  margin-bottom: 30px;
+}
+
+.hotel {
+  display: inline-block;
+}
+
+.margin {
+  margin-right: 40px;
+}
+
+.marginzero {
+  margin-bottom: 10px;
+}
+
+/* SZEKCIÓK ------------------------------ */
+
+section {
+  width: 60%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#balaton,
+#tisza,
+#szelidi {
+  border-radius: 10px;
+  float: right;
+  margin: 35px;
+}
+
+#balaton {
+  background: rgb(237, 219, 208);
+}
+
+#tisza {
+  background: rgb(234, 217, 186);
+}
+
+#szelidi {
+  background: rgb(218, 226, 238);
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 35px;
+}
+
+img {
+  display: block;
+  width: 450px;
+  margin: 35px;
+  margin-top: 0;
+  float: left;
+  border-radius: 10px;
+}
+
+.clearfix::after {
+  overflow: auto;
+}
+
+section p {
+  margin: 35px;
+}
