@@ -61,7 +61,8 @@ li {
 }
 
 li a {
-  font-size: 24px;
+  font-weight: 700;
+  font-size: 32px;
   display: block;
   text-decoration: none;
   padding: 10px 30px;
@@ -69,14 +70,20 @@ li a {
 }
 
 li:hover {
-  background-color: rgb(93, 92, 92);
+  background-color: rgb(188, 212, 235);
 }
 
 /* ŰRLAP */
 
+h3 {
+  margin-left: 35px;
+  font-weight: 700;
+}
+
 form {
   color: rgb(23, 23, 23);
   margin: 35px;
+  font-weight: 500;
 }
 
 input,

@@ -1,0 +1,77 @@
+@media (max-width: 1757px) {
+  #header-img {
+    display: block;
+    width: 97%;
+    border-radius: 10px;
+    margin: 18px;
+  }
+
+  #balaton,
+  #tisza,
+  #szelidi {
+    border-radius: 10px;
+    display: block;
+    float: none;
+    margin: 18px;
+    width: 97%;
+  }
+
+  img {
+    width: 40%;
+    display: block;
+    float: left;
+  }
+
+  aside {
+    display: block;
+    float: none;
+    width: 97%;
+    margin: 18px;
+  }
+
+  .respclear::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@media (max-width: 1000px) {
+  aside {
+    width: 95%;
+  }
+
+  #balaton,
+  #tisza,
+  #szelidi {
+    width: 95%;
+  }
+
+  #header-img {
+    width: 95%;
+  }
+
+  li a {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  aside {
+    width: 91%;
+  }
+
+  #balaton,
+  #tisza,
+  #szelidi {
+    width: 91%;
+  }
+
+  #header-img {
+    width: 91%;
+  }
+
+  li a {
+    font-size: 16px;
+  }
+}
