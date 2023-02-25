@@ -8,7 +8,8 @@
 
   #balaton,
   #tisza,
-  #szelidi {
+  #szelidi,
+  footer {
     border-radius: 10px;
     display: block;
     float: none;
@@ -43,7 +44,8 @@
 
   #balaton,
   #tisza,
-  #szelidi {
+  #szelidi,
+  footer {
     width: 95%;
   }
 
@@ -63,7 +65,8 @@
 
   #balaton,
   #tisza,
-  #szelidi {
+  #szelidi,
+  footer {
     width: 91%;
   }
 
