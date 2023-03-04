@@ -1,186 +1,261 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background: #d7b520;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  color: #333;
+    background-color: rgb(219, 187, 114);
+    color: rgb(233, 233, 233);
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-/* KONTÉNER -------------------------- */
+/* FŐBB ELEMEK -------------------------- */
 
 .container {
-  width: 80%;
-  margin: 0 auto;
-  border: 2px solid #ddd;
-  background: #fff;
+    margin: 0 auto;
+    width: 92%;
 }
 
-/* FEJLÉC ---------------------------- */
-
-#header-img {
-  display: block;
-  width: 96%;
-  border-radius: 10px;
-  margin: 30px;
-}
-
-#header-img,
-aside,
-section,
-footer {
-  border: 2px solid rgb(203, 211, 238);
-}
-
-/* OLDALSÁV -------------------------- */
-
-aside {
-  width: 30%;
-  height: 2040px;
-  float: left;
-  margin: 35px;
-  background: rgb(82, 148, 207);
-  border-radius: 10px;
-}
-
-/* NAVIGÁCIÓ */
+/* NAVIGÁCIÓ ---------------------------- */
 
 nav {
-  width: 100%;
-  margin-bottom: 100px;
-  margin-top: 50px;
+    background: #091018;
+    border-bottom: 2px solid rgb(74, 52, 0);
 }
 
-li {
-  list-style-type: none;
-  text-align: center;
-  border-radius: 10px;
+nav ul {
+    display: flex;
+    text-decoration: none;
+    justify-content: flex-end;
+    list-style-type: none;
 }
 
-li a {
-  font-weight: 700;
-  font-size: 32px;
-  display: block;
-  text-decoration: none;
-  padding: 10px 30px;
-  color: black;
+ul li a {
+    display: block;
+    text-decoration: none;
+    color:rgb(195, 152, 52);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 35px;
 }
 
-li:hover {
-  background-color: rgb(227, 234, 241);
+ul li a:hover {
+    background: #101d2b;
+    color: rgb(225, 176, 61)
 }
 
-/* ŰRLAP */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -35px;
+    background-color: #101d2b;
+    min-width: 147px;
+    box-shadow: 0px 20px 16px 0px rgba(0, 0, 0, 0.329);
+    padding: 20px 10px 4px 10px;
+    z-index: 1;
+    text-align: center;
+    border-bottom: 2px solid rgb(74, 52, 0);
+  }
 
-h3 {
-  margin-left: 35px;
-  font-weight: 700;
+.dropdown-content p {
+    padding: 10px 5px;
 }
 
-form {
-  color: rgb(23, 23, 23);
-  margin: 35px;
-  font-weight: 500;
+ul li:hover .dropdown-content {
+    display: block;
+  }
+
+/* FEJLÉC ------------------------------- */
+
+header {
+    display: flex;
+    background-color: #101d2c;
 }
 
-input,
-label,
-select {
-  display: block;
+.header {
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 100px 120px 120px 80px;
+    margin: 70px auto;
 }
 
-input,
-select {
-  margin-bottom: 30px;
+.header h3 {
+    text-align: center;
+    grid-column: 1 / 3;
+    margin: 50px 10px;
+    
 }
 
-.hotel {
-  display: inline-block;
+.realtor-img {
+    width: 75px;
+    border-radius: 50%;
 }
 
-.margin {
-  margin-right: 40px;
+.realtor p {
+    font-weight: 700;
+    margin-top: 8px;
+    font-size: 18px;
 }
 
-.marginzero {
-  margin-bottom: 10px;
+.realtor span {
+    font-size: 12px;
+    color:#666;
 }
 
-/* SZEKCIÓK ------------------------------ */
-
-section {
-  width: 60%;
+.headerimg {
+    background-image: linear-gradient(rgba(57, 75, 97, 0.975), rgba(14, 21, 29, 0.975)), url(../img/apartment4.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 1200px;
+    height: 600px;
+    padding: 8rem;
+    padding-top: 110px;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.headerimg h5, .header h3 {
+    color:rgb(195, 152, 52);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    
 }
 
-#balaton,
-#tisza,
-#szelidi {
-  border-radius: 10px;
-  float: right;
-  margin: 35px;
+.headerimg h5 {
+    margin-top: 100px;
+    margin-bottom: 20px;
 }
 
-#balaton {
-  background: rgb(237, 219, 208);
+.headerimg h1 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    margin-bottom: 20px;
 }
 
-#tisza {
-  background: rgb(234, 217, 186);
+.headerimg span a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(132, 95, 9);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border-radius: 2px;
 }
 
-#szelidi {
-  background: rgb(218, 226, 238);
+
+/* SZEKCIÓK ------------------------- */
+
+.quotes {
+    background: white;
+    color: #666;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px 200px;
+    column-gap: 150px;
+    row-gap: 50px;
+    align-content: center;
+    justify-content: center;
+    padding: 90px 0;
 }
 
-h1 {
-  font-size: 1.2rem;
-  font-style: italic;
-  margin: 35px;
+h4 {
+    margin-bottom: 12px;
 }
 
-img {
-  display: block;
-  width: 450px;
-  margin: 35px;
-  margin-top: 0;
-  float: left;
-  border-radius: 10px;
+.quotes p {
+    color: #999;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    word-spacing: 1px;
+    
 }
 
-section p {
-  margin: 35px;
+.customer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 600px;
+    background: rgb(241, 241, 241);
+    position: relative;
+    color: #666;
 }
+
+.customer-content {
+    padding: 260px 120px 20px 240px;
+}
+
+.customer-content h5 {
+    color:rgb(211, 149, 3);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.customer-content h4 {
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.customer-content p {
+    color: #999;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    word-spacing: 1px;
+    font-style: italic;
+}
+
+.story-img {
+    background-image: linear-gradient(rgba(205, 160, 37, 0.654), rgba(209, 188, 29, 0.636)), url(../img/peace.jpg);
+}
+
+#story-1, 
+#story-2 {
+    /* display: block; */
+    position: absolute;
+}
+
+#story-1 {
+    top: 100px;
+    left: 160px;
+    width: 540px;
+}
+
+#story-2 {
+    top: 250px;
+    left: 450px;
+    width: 500px;
+}
+
+/* LÁBLÉC ---------------------------- */
 
 footer {
-  background: #d7d7d7;
-  display: block;
-  float: left;
-  width: 95.5%;
-  margin: 35px;
-  height: 130px;
-  border-radius: 10px;
+    display: block;
+    background: #101d2b;
 }
 
 footer p {
-  font-size: 14px;
-  font-style: italic;
-  color: rgb(94, 94, 94);
-  text-align: center;
-  margin-top: 30px;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    word-spacing: 1.3px;
+    color: rgb(220, 220, 220);
+    padding: 30px;
 }
