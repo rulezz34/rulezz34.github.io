@@ -1,144 +1,175 @@
 <!DOCTYPE html>
 <html lang="hu">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="css/animation.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-    <title>Relax Rezidencia</title>
-  </head>
-  <body>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="index.html">Főoldal</a></li>
-          <li>
-            <a href="#"><div class="dropdown">
-                <span>Ingatlanok</span>
-                <div class="dropdown-content">
-                  <p>Ingatlan 1</p>
-                  <p>Ingatlan 2</p>
-                  <p>Ingatlan 3</p>
-                </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+  <title>Relax Rezidencia</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <a class="menu-item main-menu-item" href="index.html"><span>Polaris</span>Hotels<span>.</span></a>
+      <div class="hamburger">
+        <div class="line-1 line-1-active"></div>
+        <div class="line-2 line-2-active"></div>
+        <div class="line-3 line-3-active"></div>
+      </div>
+      <ul>
+        <li><a class="menu-item" href="index.html">Főoldal</a></li>
+        <li>
+          <a class="menu-item" href="#">
+            <div class="dropdown">
+              <span>Hotelek</span>
+              <div class="dropdown-content">
+                <a href="danubius.html">
+                  <p class="dropdown-a">Danubius Hotel Annabella</p>
+                </a>
+                <a href="golden.html">
+                  <p class="dropdown-a">Hotel Golden Lake Resort</p>
+                </a>
+                <a href="akademia.html">
+                  <p class="dropdown-a">Akadémia Hotel</p>
+                </a>
               </div>
-            </a>
-          </li>
-          <li><a href="#">Rólunk</a></li>
-          <li><a href="#">Elérhetőség</a></li>
-        </ul>
-      </nav>
-      <header>
-        <div class="headerimg  ">
-          <h5 class="animate__animated animate__fadeInLeft">A Saját Otthonod</h5>
-          <h1 class="animate__animated animate__fadeInLeft" >Légy üdvözölve a szabadság birodalmában!</h1>
-          <span class="animate__animated animate__fadeInLeft" > <a href="#">Tekintse meg ingatlanjainkat</a></span>
+            </div>
+          </a>
+        </li>
+        <li><a class="menu-item" href="rolunk.html">Rólunk</a></li>
+        <li><a class="menu-item" href="kapcsolat.html">Kapcsolat</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div class="header-left">
+        <h1 class="animate__animated animate__fadeInLeft">
+          Üdvözöljük a kényelem és a luxus világában!
+        </h1>
+        <h2>
+          Egy kis nyugalomra, kikapcsolódásra vágyik egy modern és igényes
+          környezetben? Weboldalunkon megtalálja a lehető legjobb hoteleket,
+          melyekben élvezheti nyaralása minden percét.
+        </h2>
+        <span class="animate__animated animate__fadeInLeft">
+          <a href="#">Tekintse meg hoteleinket</a></span>
+      </div>
+      <div class="header-right">
+        <h3>A 3 legjobb közvetítőnk</h3>
+        <img class="realtor-img" src="img/realtor-1.jpeg" alt="Ügynök" />
+        <div class="realtor">
+          <p>Ferenczi Péter</p>
+          <span>129 foglalás</span>
         </div>
-        <div class="header">
-          <h3>A 3 legjobb ingatlanügynök</h3>
-          <img class="realtor-img" src="img/realtor-1.jpeg" alt="Ügynök">
-          <div class="realtor">
-            <p>Steymajer Imre</p>
-            <span>129 eladott ház</span>
-          </div>
-          <img class="realtor-img" src="img/realtor-2.jpeg" alt="Ügynök">
-          <div class="realtor">
-            <p>Szabó Eszter</p>
-            <span>102 eladott ház</span>
-          </div>
-          <img class="realtor-img" src="img/realtor-3.jpeg" alt="Ügynök">
-          <div class="realtor">
-            <p>Tóth Krisztián</p>
-            <span>78 eladott ház</span>
-          </div>
-            
-            
-          
+        <img class="realtor-img" src="img/realtor-2.jpeg" alt="Ügynök" />
+        <div class="realtor">
+          <p>Szabó Eszter</p>
+          <span>102 foglalás</span>
         </div>
-      </header>
-      <section class="quotes">
-        <div>
-          <h4 class="animate__animated animate__fadeInUp">A világ legjobb luxusotthonai</h4>
-          <p class="animate__animated animate__fadeInUp">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-            reprehenderit sequi. Voluptatum modi voluptatibus veniam
-            necessitatibus tempora provident velit obcaecati perspiciatis,
-            corrupti, repudiandae quibusdam vitae porro ipsam dignissimos
-            quisquam adipisci.
-          </p>
+        <img class="realtor-img" src="img/realtor-3.jpeg" alt="Ügynök" />
+        <div class="realtor">
+          <p>Tóth Krisztián</p>
+          <span>78 foglalás</span>
         </div>
-        <div>
-          <h4 class="animate__animated animate__fadeInUp">Csak a legjobb tulajdonságok</h4>
-          <p class="animate__animated animate__fadeInUp">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit non
-            error omnis, voluptatibus in nisi. Cumque quaerat mollitia error
-            possimus animi velit saepe, quas, suscipit necessitatibus deserunt
-            molestias, inventore quasi.
-          </p>
-        </div>
-        <div>
-          <h4 class="animate__animated animate__fadeInUp">Minden ház a legjobb helyeken</h4>
-          <p class="animate__animated animate__fadeInUp">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
-            aspernatur ducimus repellat quaerat incidunt vero id ipsam officia
-            modi odit aperiam assumenda sint quam? Nobis atque eum maiores totam
-            rem?
-          </p>
-        </div>
-        <div>
-          <h4 class="animate__animated animate__fadeInUp">Egy héten belül új otthon</h4>
-          <p class="animate__animated animate__fadeInUp">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            sequi hic repellendus nesciunt perferendis in ea odio sed quos
-            officiis. Similique voluptatum accusamus reprehenderit, possimus
-            consequuntur rem voluptas accusantium animi?
-          </p>
-        </div>
-        <div>
-          <h4 class="animate__animated animate__fadeInUp">A legszéleskörűbb választás</h4>
-          <p class="animate__animated animate__fadeInUp"> 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            eius, vero ratione accusantium eum officiis ad illum qui sed quod,
-            cumque error velit quam minus adipisci ullam quisquam explicabo
-            autem.
-          </p>
-        </div>
-        <div>
-          <h4 class="animate__animated animate__fadeInUp">Biztonságos fizetés bankkártyával</h4>
-          <p  class="animate__animated animate__fadeInUp">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-            reprehenderit sequi. Voluptatum modi voluptatibus veniam
-            necessitatibus tempora provident velit obcaecati perspiciatis,
-            corrupti, repudiandae quibusdam vitae porro ipsam dignissimos
-            quisquam adipisci.
-          </p>
-        </div>
-      </section>
-      <section class="customer">
-        <div class="story-img">
-            <img id="story-1" src="/img/story-1.jpeg" alt="Sztorikép" />
-            <img id="story-2" src="/img/story-2.jpeg" alt="Sztorikép" />
-        </div>
-        <div class="customer-content">
-          <h5>Boldog Vásárlók</h5>
-          <h4>“Életünk legjobb döntése”</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium rem eaque ea maxime delectus architecto quisquam, amet totam. Repellendus at veritatis quae possimus culpa doloremque mollitia minus, obcaecati dignissimos quod.</p>
-        </div>
-      </section>
-      <footer>
-        <p> Copyright 2023, A weboldalt készítette: Geletei Dániel</p>
-      </footer>
-    </div>
-  </body>
+      </div>
+    </header>
+    <section class="quotes">
+      <div>
+        <h4 class="animate__animated animate__fadeInUp">
+          A világ legjobb luxushotelei
+        </h4>
+        <p class="animate__animated animate__fadeInUp">
+          A világ legjobb luxushotelei, melyek olyan exkluzivitással,
+          kényelemmel és kiválósággal bírnak, amelyek egyszerűen elképesztőek.
+          Ezek a hotelek a gazdagság, a hatalom és az elegancia megtestesítői.
+        </p>
+      </div>
+      <div>
+        <h4 class="animate__animated animate__fadeInUp">
+          Csak a legjobb tulajdonságok
+        </h4>
+        <p class="animate__animated animate__fadeInUp">
+          A hotelek nagyon jó állapotban vannak, korszerű felszereléssel
+          rendelkeznek. A felújítás során minden részletre odafigyeltek, így a
+          szálloda minden helyisége funkcionális és modern. A fürdőszoba és a
+          konyha egyaránt teljesen új, valamint a szobák minőségi bútorokból
+          lettek kialakítva, biztosítva ezzel a kényelmet.
+        </p>
+      </div>
+      <div>
+        <h4 class="animate__animated animate__fadeInUp">
+          A hotelek a lehető legjobb helyen
+        </h4>
+        <p class="animate__animated animate__fadeInUp">
+          Könnyen elérhetőek a kulcsfontosságú intézmények, nevezetességek,
+          üzletek, szórakozóhelyek, valamint éttermek. Azok számára, akik
+          szeretik a nyugalmat, egy csendesebb környéken lévő szálloda lehet a
+          megfelelő választás.
+        </p>
+      </div>
+      <div>
+        <h4 class="animate__animated animate__fadeInUp">
+          Azonnali teljes körű foglalás
+        </h4>
+        <p class="animate__animated animate__fadeInUp">
+          Ha gyorsan kell egy szálloda bérlése a weboldalunk megfelelő hely
+          lehet az Ön számára. Lehetővé tesszük, hogy gyorsan találjon olyan
+          hotelt, amely megfelel igényeinek.
+        </p>
+      </div>
+      <div>
+        <h4 class="animate__animated animate__fadeInUp">
+          Széleskörű választék
+        </h4>
+        <p class="animate__animated animate__fadeInUp">
+          Weboldalunkon rendkívül széles választékból válogathat, mellyel
+          törekszünk minden igényének kielégítésére, legyen szó környezetről,
+          látványosságokról, szórakozási lehetőségekről, vagy csak simán a
+          nyugalmas idő eltöltéséről.
+        </p>
+      </div>
+      <div>
+        <h4 class="animate__animated animate__fadeInUp">
+          Biztonságos fizetés
+        </h4>
+        <p class="animate__animated animate__fadeInUp">
+          Lehetőséget kínálunk az Ön számára legkedvezőbb fizetési mód
+          alkalmazására, amely lehet: átutalás, bankkártyás vagy készpénzes
+          fizetés.
+        </p>
+      </div>
+    </section>
+    <section class="customer">
+      <div class="customer-left">
+        <img id="story-img" src="/img/story-4.jpg" alt="Sztorikép" />
+      </div>
+
+      <div class="customer-content">
+        <h4>“Életünk legjobb döntése volt.”</h4>
+        <p>
+          Mikor minden pillanatban, minden új élménynél feljön benned az
+          érzés, hogy igen, ez a döntés a lehető legjobb választás volt.
+          Nagyon örülünk a párommal, hogy a Polaris Hotels-t választottuk a
+          tökéletes szálloda kiválasztásához.
+        </p>
+      </div>
+    </section>
+    <section class="bottom"></section>
+    <footer>
+      <p>&copy Copyright 2023 | A weboldalt készítette: Geletei Dániel</p>
+      <p>Prooktatás Front-end Vizsgamunka</p>
+    </footer>
+  </div>
+
+  <script src="js/nav.js"></script>
+</body>
+
 </html>
