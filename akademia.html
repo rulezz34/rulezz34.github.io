@@ -1,84 +1,135 @@
 <!DOCTYPE html>
 <html lang="hu">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="css/animation.css" />
-    <link rel="stylesheet" href="css/hotels.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-    <title>Relax Rezidencia</title>
-  </head>
-  <body>
-    <body class="container">
-      <nav>
-        <a class="menu-item main-menu-item" href="index.html"
-          ><span>Polaris</span>Hotels<span>.</span></a
-        >
-        <ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/animation.css" />
+  <link rel="stylesheet" href="css/hotels.css" />
+  <link rel="stylesheet" href="css/queries.css" />
+  <title>Polaris-Hotels</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+</head>
+
+<body>
+
+  <body class="container">
+    <nav>
+
+      <div class="nav-container">
+        <a class="menu-item main-menu-item" href="index.html">Polaris-Hotels</a>
+        <div class="hamburger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+        <ul class="ul-desktop">
+          <li><a class="menu-item" href="index.html">Főoldal</a></li>
           <li>
-            <a class="menu-item" href="index.html">Főoldal</a>
-            <a class="menu-item" href="#"
-              ><div class="dropdown">
+            <a class="menu-item" href="#">
+              <div class="dropdown">
                 <span>Hotelek</span>
                 <div class="dropdown-content">
-                  <a href="danubius.html"
-                    ><p class="dropdown-a">Danubius Hotel Annabella</p></a
-                  >
-                  <a href="golden.html"
-                    ><p class="dropdown-a">Hotel Golden Lake Resort</p></a
-                  >
-                  <a href="akademia.html"
-                    ><p class="dropdown-a">Akadémia Hotel</p></a
-                  >
+                  <a href="danubius.html">
+                    <p class="dropdown-a">Danubius Hotel Annabella</p>
+                  </a>
+                  <a href="golden.html">
+                    <p class="dropdown-a">Hotel Golden Lake Resort</p>
+                  </a>
+                  <a href="akademia.html">
+                    <p class="dropdown-a">Akadémia Hotel</p>
+                  </a>
                 </div>
               </div>
             </a>
           </li>
           <li><a class="menu-item" href="rolunk.html">Rólunk</a></li>
-          <li><a class="menu-item" href="kapcsolat.html">Kapcsolat</a></li>
+          <li><a class="menu-item" href="kapcsolat.html">Kapcsolat<a></li>
         </ul>
-      </nav>
-      <section id="main">
-        <div class="img">
-          <img class="hotel-img" src="img/akademia.jpg" alt="Danubius Hotel Annabella">
-        </div>
-        <div class="content-text">
-          <h2>Akadémia Hotel</h2>
-          
-          
-          <h3>Ingyenes belépés a városi uszodába</h3>
 
-          <p>Ez a szálloda a Veszprém megyei Balatonfüreden található. A hotel vendégei számára ingyenes a belépés a városi uszodába, ahol úszómedence, szauna, pezsgőfürdő és gőzkabin segíti a kellemes felfrissülést.
+        <ul class="ul-mobile">
+          <li><a class="menu-item border-mobile" href="index.html">Főoldal</a></li>
+          <li><a class="menu-item border-mobile">Hotelek:</a></li>
+          <li><a href="danubius.html">
+              <p class="dropdown-a menu-item">Danubius Hotel Annabella</p>
+            </a></li>
+          <li><a href="golden.html">
+              <p class="dropdown-a menu-item">Hotel Golden Lake Resort</p>
+            </a></li>
+          <li><a href="akademia.html">
+              <p class="dropdown-a menu-item">Akadémia Hotel</p>
+            </a></li>
 
-            A légkondicionált szobákban síkképernyős TV is biztosított. A szálloda egész területén díjmentes a wifihozzáférés.
-            
-            A recepció éjjel-nappal a vendégek rendelkezésre áll. A helyszínen étterem is működik. A szállodánál díjmentes magánparkoló biztosított.
-            
-            A hotelben kerékpár bérelhető. A legközelebbi repülőtér a 61 km-re lévő Hévíz-Balaton reptér.
-        
-            Légkondicionált és többségében erkélyes szobáinkban telefon, LCD televízió, hajszárító, minibár és széf található. Mind a szobákban, mind pedig a közösségi terekben ingyenes wifi használatot biztosítunk vendégeink részére.</p>
 
-          <h4>"GŐZKABIN, PEZSGŐFÜRDŐ, ÚSZÓMEDENCE"</h4>
+          </a>
+          </li>
+          <li><a class="menu-item border-mobile" href="rolunk.html">Rólunk</a></li>
+          <li><a class="menu-item border-mobile" href="kapcsolat.html">Kapcsolat</a></li>
+        </ul>
 
-          <h5>A szálloda nyitva tartása: 2023. április 1 - október 30.</h5>
-        </div>
-      </section>
-      <img class="collage" src="img/akademia-collage.jpg" alt="Collage">
-      <section class="bottom"></section>
-      <footer>
-        <p>&copy Copyright 2023 | A weboldalt készítette: Geletei Dániel</p>
-        <p>Prooktatás Front-end Vizsgamunka</p>
-      </footer>
-    </body>
+      </div>
+    </nav>
+    <section id="main">
+      <div class="img">
+        <img class="hotel-img" src="img/akademia.jpg" alt="Danubius Hotel Annabella">
+      </div>
+      <div class="content-text">
+        <h2>Akadémia Hotel</h2>
+
+
+        <h3>Ingyenes belépés a városi uszodába</h3>
+
+        <p>Ez a szálloda a Veszprém megyei Balatonfüreden található. A hotel vendégei számára ingyenes a belépés a
+          városi uszodába, ahol úszómedence, szauna, pezsgőfürdő és gőzkabin segíti a kellemes felfrissülést.
+
+          A légkondicionált szobákban síkképernyős TV is biztosított. A szálloda egész területén díjmentes a
+          wifihozzáférés.
+
+          A recepció éjjel-nappal a vendégek rendelkezésre áll. A helyszínen étterem is működik. A szállodánál díjmentes
+          magánparkoló biztosított.
+
+          A hotelben kerékpár bérelhető. A legközelebbi repülőtér a 61 km-re lévő Hévíz-Balaton reptér.
+
+          Légkondicionált és többségében erkélyes szobáinkban telefon, LCD televízió, hajszárító, minibár és széf
+          található. Mind a szobákban, mind pedig a közösségi terekben ingyenes wifi használatot biztosítunk vendégeink
+          részére.</p>
+
+        <h4>"GŐZKABIN, PEZSGŐFÜRDŐ, ÚSZÓMEDENCE"</h4>
+
+        <h5>A szálloda nyitva tartása: 2023. április 1 - október 30.</h5>
+      </div>
+    </section>
+    <section id="collage">
+      <div class="collage">
+        <img class="animate-me" id="inside" src="img/akademia-inside.jpg" alt="Collage">
+        <img class="animate-me" id="inside2" src="img/akademia-inside2.jpg" alt="Collage">
+        <img class="animate-me" id="inside3" src="img/akademia-inside3.jpg" alt="Collage">
+        <img class="animate-me-2" id="inside4" src="img/akademia-inside4.jpg" alt="Collage">
+        <img class="animate-me-2" id="inside5" src="img/akademia-inside5.jpg" alt="Collage">
+        <img class="animate-me-2" id="inside6" src="img/akademia-inside6.jpg" alt="Collage">
+        <img class="animate-me" id="inside7" src="img/akademia-inside7.jpg" alt="Collage">
+        <img class="animate-me-2" id="inside8" src="img/akademia-inside8.jpg" alt="Collage">
+        <img class="animate-me" id="inside9" src="img/akademia-inside9.jpg" alt="Collage">
+        <img class="animate-me-2" id="inside10" src="img/akademia-inside10.jpg" alt="Collage">
+        <img class="animate-me-2" id="inside11" src="img/akademia-inside11.jpg" alt="Collage">
+        <img class="animate-me" id="inside12" src="img/akademia-inside12.jpg" alt="Collage">
+      </div>
+    </section>
+    <section class="bottom"></section>
+    <footer>
+      <p>&copy Copyright 2023 | A weboldalt készítette: Geletei Dániel</p>
+      <p>Prooktatás Front-end Vizsgamunka</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+
 </html>

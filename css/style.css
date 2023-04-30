@@ -23,41 +23,47 @@ body {
 /* NAVIGÁCIÓ ---------------------------- */
 
 .main-menu-item {
-  text-shadow: 1px 1px rgb(0, 0, 0);
-  display: inline-block;
-  text-decoration: none;
+  justify-content: center;
   align-items: center;
+  font-family: 'Great Vibes', cursive;
+  width: 340px;
+  text-shadow: 2px 2px 0px  #000000, -2px -2px 0px  #d400ff, 2px -2px 0px  #9400a4b9, -2px 2px 0px  #000000;
+  display: block;
+  text-decoration: none;
   list-style-type: none;
-  background-image: linear-gradient(to right, #a800c2, #3c008f);
   color: rgb(255, 255, 255);
-  font-size: 18px;
+  font-size: 42px;
   font-weight: 800;
-  margin-left: 40px;
   border-radius: 30px;
-  padding: 2px 12px;
+  margin-left: 50px;
 }
 
-.main-menu-item span {
-  color: rgb(228, 0, 0);
-  font-size: 36px;
-  text-shadow: 1px 1px rgb(0, 0, 0);
+.ul-mobile {
+  display: none;
 }
 
 nav {
-  display: flex;
   height: 70px;
   width: 100%;
   top: 0;
   left: 0;
   position: fixed;
-  align-items: center;
   z-index: 10;
+}
+
+.nav-container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav ul {
   display: flex;
   height: 100%;
-  width: 90%;
+  width: 100%;
   text-decoration: none;
   justify-content: flex-end;
   align-items: center;
@@ -78,8 +84,14 @@ nav ul {
   color: #f4b20a;
 }
 
+nav ul li {
+  padding: 20px;
+  
+  align-items: center;
+}
+
 nav ul li a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 20px;
@@ -89,16 +101,14 @@ nav ul li a {
   padding: 0px 10px;
   margin: 4px;
 
-
 }
 
-nav ul li {
-  padding: 20px;
-}
 
 nav ul li a:hover {
   color: #f4b20a;
+  
 }
+
 
 /* DROPDOWN ---------------------------- */
 
@@ -159,6 +169,8 @@ nav ul li a:hover {
   flex-direction: column;
   gap: 8px;
   cursor: pointer; 
+  width: 40px;
+  height: 40px;
 }
 
 .line-1,
@@ -187,17 +199,23 @@ nav ul li a:hover {
 /* FEJLÉC ------------------------------- */
 
 header {
-  display: flex;
+  
   background-color: #101d2c;
   width: 100%;
   height: 940px;
   background-image: linear-gradient(
-      rgba(26, 26, 26, 0.498),
-      rgba(15, 15, 15, 0.599)
+      rgba(16, 16, 16, 0.498),
+      rgba(11, 11, 11, 0.599)
     ),
-    url(../img/bg8.jpg);
+    url(../img/bg.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.header-container {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .header-left {
@@ -221,33 +239,40 @@ header {
   text-shadow: 4px 4px 1px black;
 }
 
-.header-left span a {
+.header-left-btn {
   display: inline-block;
   text-decoration: none;
   color: #ffd977;
   background-color: #392687;
   /* background-color: #422612; */
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 800;
   letter-spacing: 1px;
   word-spacing: 4px;
   text-transform: uppercase;
   padding: 12px 20px;
+  margin: 40px 0;
   border-radius: 30px;
-  box-shadow: 0px 0px 10px rgba(40, 32, 0, 0.486);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.746);
+}
+
+.header-left-btn:hover {
+  background-color: #5337c5;
 }
 
 .header-right {
   display: grid;
   align-items: center;
   grid-template-columns: 100px 200px;
-  grid-template-rows: 130px 120px 120px 120px;
+  grid-template-rows: 120px 120px 120px 120px;
   margin: 180px 100px 200px 100px;
-  background-color: #4345c348;
+  background-color: #39268740;
   border-radius: 20px;
-  box-shadow: 0px 0px 40px rgba(14, 14, 14, 0.176);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.528);
   padding: 20px 50px;
   backdrop-filter: blur(8px);
+  margin: 0 auto;
+  margin-top: 200px;
 }
 
 hr {
@@ -257,32 +282,36 @@ hr {
 .header-right h3 {
   text-align: center;
   grid-column: 1 / 3;
-  color: #ffffff;
+  color: #cfa2ff;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.9px;
   word-spacing: 0.1px;
   text-transform: uppercase;
-  background-color: rgba(43, 34, 26, 0.317);
+  background-color: rgba(120, 80, 159, 0.158);
   border-radius: 20px;
+  padding: 8px 10px;
+  
 }
 
 .realtor-img {
   width: 82px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.783);
+  border: 2px solid rgba(204, 204, 204, 0.783);
 }
 
 .realtor p {
-  color: rgb(241, 241, 241);
-  font-weight: 700;
-  margin-top: 8px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
   font-size: 20px;
+  margin-left: 16px;
 }
 
 .realtor span {
+  display: block;
   font-size: 12px;
-  color: #aeaeae;
+  color: #b5b5b5;
+  margin-left: 16px;
 }
 
 /* SZEKCIÓK ------------------------- */
@@ -297,13 +326,19 @@ hr {
   row-gap: 100px;
   align-content: center;
   justify-content: center;
-  padding: 210px 0 190px 0;
+  padding: 120px 0 140px 0;
 }
 
 .quotes div {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
   box-shadow: 0px 0px 30px rgba(51, 51, 51, 0.128);
   padding: 28px;
+  border-radius: 3px;
   /* border: 4px solid rgb(247, 247, 247); */
+  animation-fill-mode: forwards;
+  
 }
 
 h4 {
@@ -319,53 +354,70 @@ h4 {
   word-spacing: 1px;
 }
 
+/* IDÉZET KÉPPEL --------------------- */
+
 .customer {
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
-  position: relative;
+  height: 100%;
+  
+  /* justify-content: flex-end; */
 }
 
-.customer-content {
-  width: 80%;
-  height: 500px;
-  padding: 170px 120px 20px 400px;
+
+.customer-left {
+  width: 50vw;
+  height: 100%;
+}
+
+#story-img {
+  display: block;
+  width: 50vw;
+  scale: 110%;
+  border-radius: 0px 20px 20px 0px;
+}
+
+
+.customer-right {
+  width: 50vw;
+  padding: 30px 30px 30px 120px;
   background-image: linear-gradient(#422612, #251503);
 }
 
-.customer-content h4 {
+.customer-text {
+  padding: 200px 0px 50px 100px;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation-fill-mode: forwards!important;
+}
+
+.customer-text h4 {
   color: #f4b20a;
   font-size: 40px;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 20px;
 }
 
-.customer-content p {
+.customer-text p {
+  width: 70%;
   color: #f4b20a;
   font-size: 14px;
   letter-spacing: 0.3px;
   word-spacing: 1px;
   font-style: italic;
   font-weight: 600;
-  margin-left: 10px;
 }
 
-.customer-left {
-  background-image: linear-gradient(#f4b20a, #f4b20a);
-  width: 40%;
-}
-
-#story-img {
-  height: 600px;
-  position: absolute;
-  top: -50px;
-  left: 0;
-  border-radius: 0px 20px 20px 0px;
-}
+/* ALSÓ RÉSZ ------------------------- */
 
 .bottom {
   width: 100%;
-  height: 200px;
+  height: 140px;
   background-color: #fff;
 }
 
@@ -386,4 +438,29 @@ footer p {
   letter-spacing: 0.3px;
   word-spacing: 1.3px;
   color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+/* ANIMÁCIÓK ----------------- */
+
+
+.slide_up {
+  display: block;
+  animation: slide_up 1s ease;
+}
+
+@keyframes slide_up {
+  0% {
+    transform: translateY(250px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
