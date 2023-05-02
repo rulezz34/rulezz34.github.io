@@ -23,17 +23,16 @@
     font-size: 24px;
   }
 
-  .customer-right {
-    padding: 20px 20px 20px 80px;
+  .customer-right { 
+    padding: 110px 30px 30px 150px;
   }
 
-  .customer-text h4 {
-    font-size: 32px;
+
+  .customer-text {
+    width: 96%;
+    margin: 0 auto;
   }
 
-  .customer-text p {
-    font-size: 12px;
-  }
 }
 
 @media (max-width: 1160px) {
@@ -126,7 +125,19 @@
 
   .header-right{
     margin: 0 auto;
-    
+  }
+
+  .customer-right { 
+    padding: 60px 30px 30px 120px;
+  }
+
+  .customer-text {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .customer-text h4 {
+    font-size: 28px;
   }
 }
 
@@ -148,8 +159,24 @@
   }
 
   .customer-right{
+    height: 250px;
     width: 100%;
-    padding: 50px 50px 50px 120px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .customer-text {
+    width: 100%;
+    height: 200px;
+    padding: 10vw;
+  }
+
+  .customer-text h4 {
+    text-align: center;
+  }
+
+  .customer-text p {
+    text-align: center;
   }
 
   #story-img {
@@ -158,9 +185,6 @@
     border-radius: 0;
   }
 
-  .customer-text h4 {
-    font-size: 32px;
-  }
 
   footer p {
     font-size: 14px;
@@ -186,16 +210,9 @@
   .header-right {
     grid-template-columns: 100px 160px;
   }
-
-  .customer-right {
-    padding: 20px 20px 20px 20px;
-  }
 }
 
 @media (max-width: 415px) {
-  .hamburger {
-    
-  }
 
   .main-menu-item {
     font-size: 32px;
@@ -208,13 +225,25 @@
   }
 
   .header-right {
-    width: 100%;
     padding: 20px 20px;
-    grid-template-columns: 90px 160px;
+    grid-template-columns: 80px 140px;
+  }
+
+  .header-right h3 {
+    font-size: 14px;
+  }
+
+  .realtor p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .realtor span {
+    text-align: center;
   }
 
   .quotes {
-    grid-template-columns: 300px;
+    grid-template-columns: 250px;
     grid-template-rows: 240px 240px 240px 240px;
     
   }
@@ -226,5 +255,9 @@
 
   .quotes p {
     font-size: 12px;
+  }
+
+  .customer-right{
+    height: 300px;
   }
 }
